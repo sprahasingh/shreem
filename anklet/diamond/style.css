@@ -1,0 +1,99 @@
+.container1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 10px;
+}
+img {
+  border: 5px solid #ffebeb;
+  margin-top: 20px;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 10px solid #ffebeb;
+}
+.container {
+  background-color: #ffcbcb;
+}
+.contact li {
+  margin: 20px;
+}
+.contact {
+  font-size: 1.5rem;
+  margin: 50px;
+}
+.contact .twitter {
+  color: #1da1f2;
+}
+.contact .instagram {
+  color: #e4405f;
+}
+.contact .github {
+  color: #181717;
+}
+a:hover {
+  color: white;
+}
+.container2 {
+  margin-top: 50px;
+  background-color: #ffcbcb;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.subscribe {
+  margin-top: 50px;
+}
+
+@media (max-width: 370px) {
+  .container1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .box {
+    width: 100%;
+  }
+  .box img {
+    width: 150px;
+    height: 150px;
+  }
+  .contact {
+    border: none;
+  }
+  .contact li {
+    margin: 5%;
+    padding: 5%;
+  }
+}
+@media (min-width: 370px) and (max-width: 650px) {
+  .container1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .box {
+    width: 100%;
+  }
+  .contact {
+    border: none;
+  }
+}
+@media (min-width: 650px) and (max-width: 1200px) {
+  .container1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 5px;
+  }
+  .box {
+    width: 100%;
+  }
+  .contact {
+    border: none;
+  }
+}
