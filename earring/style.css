@@ -1,0 +1,69 @@
+.container1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+img {
+  border: 30px solid #ffebeb;
+  margin-top: 20px;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 10px solid #ffebeb;
+}
+.container {
+  background-color: #ffcbcb;
+}
+.contact li {
+  margin: 20px;
+}
+.contact {
+  font-size: 1.5rem;
+  margin: 50px;
+}
+.contact .twitter {
+  color: #1da1f2;
+}
+.contact .instagram {
+  color: #e4405f;
+}
+.contact .github {
+  color: #181717;
+}
+a:hover {
+  color: white;
+}
+.box img {
+  height: 300px;
+  width: 300px;
+}
+.container2 {
+  margin-top: 50px;
+  background-color: #ffcbcb;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.subscribe {
+  margin-top: 50px;
+}
+@media (max-width: 370px) {
+  .contact {
+    border: none;
+  }
+  .contact li {
+    margin: 5%;
+    padding: 5%;
+  }
+  .box img {
+    height: 150px;
+    width: 150px;
+  }
+}
+@media (min-width: 370px) and (max-width: 1200px) {
+  .contact {
+    border: none;
+  }
+}
